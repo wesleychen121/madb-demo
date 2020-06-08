@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -57,32 +57,36 @@
 
     <!-- MAIN -->
     <div class="container">
-      <!-- HEADER IMAGE -->
-      <br>
-      <div>
-      <img src="images/index/responsive.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <br>
-      <!-- HELP QUERY -->
-      <div class="jumbotron">
-        <h1 class="display-4">Request Help</h1>
-        <p class="lead">Type in your ZIP and we'll find resources near you!</p>
-        <form>
-          <div class="form-group">
-            <input class="form-control" type="text" placeholder="XXXXXX">
-          </div>
-          <a class="btn btn-primary btn-lg" href="listing.html" role="button">Submit</a>
-        </form>
-      </div>
-
-      <!-- HELP OFFER -->
+      <!-- HEADER -->
       <div class="jumbotron">
         <h1 class="display-4">Offer Help</h1>
         <p class="lead">Fill out a simple form with your contact information and how you can assist others. We will hide your 
           information until you decide to reveal it.
         </p>
-        <a class="btn btn-primary btn-lg" href="form.html" role="button">Learn more</a>
       </div>
+
+      <!-- FORM -->
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Describe how you can help.</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Add tags</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>Masks</option>
+              <option>Food</option>
+              <option>Transportation</option>
+              <option>Organization</option>
+              <option>Other</option>
+            </select>
+          </div>
+        <a class="btn btn-primary btn-lg" href="listing.html" role="button">Submit</a>
+      </form>
       
     </div>
     <!-- FOOTER -->
